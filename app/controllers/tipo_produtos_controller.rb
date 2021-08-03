@@ -25,7 +25,7 @@ class TipoProdutosController < ApplicationController
 
     respond_to do |format|
       if @tipo_produto.save
-        format.html { redirect_to @tipo_produto, notice: "Tipo produto creado com sucesso." }
+        format.html { redirect_to @tipo_produto, notice: "Tipo produto criado com sucesso." }
         format.json { render :show, status: :created, location: @tipo_produto }
       else
         format.html { render :new, status: :unprocessable_entity }
